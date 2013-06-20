@@ -1,0 +1,3 @@
+db.pictures.ensureIndex( {title: "text"} ) // add index to pictures for text search
+
+db.adminCommand( { setParameter : 1, textSearchEnabled : true } ) // text search enable(writing mongo console)
